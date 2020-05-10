@@ -1,0 +1,72 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/audience-828584_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.teclas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tecla {
+  box-sizing: border-box;
+  width: 120px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0 10px;
+  border: 5px solid #000;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecla__letra {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.tecla__som {
+  color: #ffc600;
+  font-size: 0.8rem;
+}
+
+.tecla,
+.tecla__letra,
+.tecla__som {
+  transition: 0.3s ease-in-out;
+}
+
+.active {
+  transform: scale(1.1);
+  border-color: #e2d320;
+}
+
+.active .tecla__letra {
+  font-size: 1.7rem;
+}
+
+.active .tecla__som {
+  font-size: 0.9rem;
+}
+
+.active,
+.active .tecla__letra,
+.active .tecla__som {
+  transition: 0.3s ease-in-out;
+} /* A classe active será colocada na div .tecla quando ela for teclada. */
