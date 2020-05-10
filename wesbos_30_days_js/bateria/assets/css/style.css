@@ -65,8 +65,44 @@ body {
   font-size: 0.9rem;
 }
 
-.active,
+.active, /* A classe active será colocada na div .tecla quando ela for teclada. */
 .active .tecla__letra,
 .active .tecla__som {
   transition: 0.3s ease-in-out;
-} /* A classe active será colocada na div .tecla quando ela for teclada. */
+}
+
+@media only screen and (max-width: 1250px) {
+  .background {
+    align-items: center;
+  }
+
+  .teclas {
+    max-width: 650px;
+  }
+
+  .tecla {
+    margin: 5px;
+    width: 120px;
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .background {
+    align-items: flex-end;
+  }
+
+  .teclas {
+    max-width: 300px;
+    padding-bottom: 50px;
+  }
+
+  .tecla {
+    width: 90px;
+    height: 60px;
+  }
+
+  .tecla__letra {
+    font-size: 1.5rem;
+  }
+}
