@@ -33,6 +33,17 @@ let teclaLetra;
 let sound;
 let audio;
 
+function playSong(tecla) {
+  tecla.classList.add("active");
+  setTimeout(() => {
+    tecla.classList.remove("active");
+  }, 300);
+
+  sound = tecla.querySelector(".tecla__som").innerText.toLowerCase();
+  audio = new Audio(`assets/sounds/${sound}.wav`);
+  audio.play();
+}
+
 teclas.forEach((tecla) => {
   tecla.addEventListener("click", () => playSong(tecla));
 });
