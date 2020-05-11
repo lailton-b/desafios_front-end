@@ -27,3 +27,21 @@
     4.5 - Pegue a variável audio e transforme em um áudio, coloque o path absoluto e no lugar do nome do arquivo faça uma template string, a qual levará o valor da variável sound;
     4.6 - Toque o áudio com o método .play();
 */
+
+const teclas = document.querySelectorAll(".tecla");
+let teclaLetra;
+let sound;
+let audio;
+
+teclas.forEach((tecla) => {
+  tecla.addEventListener("click", () => playSong(tecla));
+});
+
+window.addEventListener("keydown", () => {
+  teclas.forEach((tecla) => {
+    teclaLetra = tecla.querySelector(".tecla__letra").innerText.toLowerCase();
+    if (event.key === teclaLetra) {
+      playSong(tecla);
+    }
+  });
+});
