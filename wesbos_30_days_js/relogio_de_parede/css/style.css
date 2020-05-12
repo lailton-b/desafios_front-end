@@ -1,0 +1,88 @@
+/* Base */
+
+body {
+  background-color: #392c3e;
+}
+
+.relogio {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  border: 15px solid #57919c;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14),
+    0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px 0 rgba(0, 0, 0, 0.2),
+    inset 0 12px 17px 2px rgba(0, 0, 0, 0.14),
+    inset 0 5px 22px 4px rgba(0, 0, 0, 0.12),
+    inset 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.relogio,
+.relogio__ponteiro,
+.relogio__numero,
+.relogio__ponto {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Números principais (os outros serão feitos com ::after e ::before) */
+
+.relogio__numero {
+  font-family: monospace;
+  font-size: 3rem;
+  color: #392c3e;
+}
+
+.relogio__numero__12 {
+  transform: translate(-50%, -267%);
+}
+
+.relogio__numero__3 {
+  transform: translate(405%, -50%);
+}
+
+.relogio__numero__6 {
+  transform: translate(-50%, 167%);
+}
+
+.relogio__numero__9 {
+  transform: translate(-492%, -50%);
+}
+
+/* Ponto */
+
+.relogio__ponto {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 3px solid #101010;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Ponteiro */
+
+.relogio__ponteiro {
+  background-color: #101010;
+  transform: translate(-97%, -50%);
+  transform-origin: 100%;
+}
+
+.relogio__ponteiro__hora {
+  width: 57px;
+  height: 6px;
+}
+
+.relogio__ponteiro__minuto {
+  width: 70px;
+  height: 4px;
+}
+
+.relogio__ponteiro__segundo {
+  width: 75px;
+  height: 2px;
+  background-color: #392c3e;
+}
