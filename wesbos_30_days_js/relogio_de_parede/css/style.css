@@ -36,20 +36,75 @@ body {
   color: #392c3e;
 }
 
+.relogio__numero:after,
+.relogio__numero:before {
+  display: block;
+  font-size: 1.5rem;
+  position: absolute;
+}
+
 .relogio__numero__12 {
   transform: translate(-50%, -267%);
+}
+
+.relogio__numero__12:before {
+  content: "11";
+  top: 24px;
+  left: -44px;
+}
+
+.relogio__numero__12:after {
+  content: "1";
+  top: 24px;
+  left: 69px;
 }
 
 .relogio__numero__3 {
   transform: translate(405%, -50%);
 }
 
+.relogio__numero__3:before {
+  content: "2";
+  top: -37px;
+  left: -11px;
+}
+
+.relogio__numero__3:after {
+  content: "4";
+  top: 56px;
+  left: -11px;
+}
+
 .relogio__numero__6 {
   transform: translate(-50%, 167%);
 }
 
+.relogio__numero__6:before {
+  content: "7";
+  top: -5px;
+  left: -50px;
+}
+
+.relogio__numero__6:after {
+  content: "5";
+  top: -5px;
+  left: 58px;
+}
+
 .relogio__numero__9 {
   transform: translate(-492%, -50%);
+}
+
+.relogio__numero__9:before {
+  content: "8";
+  top: 56px;
+  left: 21px;
+}
+
+.relogio__numero__9:after {
+  content: "10";
+  top: -37px;
+  left: 13px;
 }
 
 /* Ponto */
