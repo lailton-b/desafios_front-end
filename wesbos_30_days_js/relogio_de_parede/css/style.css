@@ -122,7 +122,7 @@ body {
 
 .relogio__ponteiro {
   background-color: #101010;
-  transform: translate(-97%, -50%);
+  transform: translate(-97%, -50%) rotate(90deg); /* Os ponteiros precisam iniciar em 90 graus (00:00/12:00 hrs) para os calculos darem certo */
   transform-origin: 100%;
 }
 
