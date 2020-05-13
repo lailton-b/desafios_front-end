@@ -127,17 +127,26 @@ body {
 }
 
 .relogio__ponteiro__hora {
-  width: 57px;
-  height: 6px;
+  width: 50px;
+  height: 1px;
+  border-top: 0px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 7px solid #57919c;
 }
 
 .relogio__ponteiro__minuto {
   width: 70px;
-  height: 4px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 7px solid #57919c;
 }
 
 .relogio__ponteiro__segundo {
   width: 75px;
-  height: 2px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 7px solid #57919c;
   background-color: #392c3e;
 }
